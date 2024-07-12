@@ -1,0 +1,154 @@
+:root {
+  --body-color: hsl(234, 29%, 20%);
+  --white-color: hsl(0, 0%, 100%)
+}
+body {
+  position: relative;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+
+.formbox {
+  background-color: var(--white-color);
+  width: 800px;
+  height: 550px;
+  border-radius: 20px;
+  opacity: 1; /* Start with 0 opacity */
+  transition: opacity 0.3s ease-out; /* Smooth opacity transition */
+}
+.content{
+  display: flex;
+}
+.formbox h1{
+  font-family: "Roboto", sans-serif;
+  color: var(--body-color);
+  font-size: 50px;
+  font-weight: 700;
+}
+p{
+  color: var(--body-color);
+  font-family: "Roboto", sans-serif;
+}
+.featur p{
+font-weight: 400;
+}
+.intro{
+  line-height: 1.5;
+  font-weight: 400;
+}
+.text{
+  margin-left: 25px;
+}
+
+.image img{
+ max-width: 100%;
+ width: 420px;
+ height: 500px;
+ padding-top: 30px;
+ padding-bottom: 15px;
+ margin-left: 15px;
+}
+.featur {
+  margin-top: -10px;
+  display: flex;
+}
+.featur p{
+  font-size: 15px;
+  color: var(--body-color);
+}
+.featur img{
+  margin-right: 10px; /* Space between image and text */
+}
+form {
+  text-align: center; /* Center aligns the form content horizontally */
+}
+
+form p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: left; /* Aligns the text of the <p> element to the left */
+}
+
+form .email {
+  display: block;
+  width: 350px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.326);
+  border-radius: 5px;
+  margin: 0 auto; /* Centers the input horizontally within the form */
+  padding: 5px; /* Add padding for better visual appearance */
+}
+
+form input[type="submit"] {
+  width: 350px; /* Adjust width as needed */
+  height: 45px; /* Adjust height as needed */
+  border: none;
+  background-color:hsl(235, 18%, 26%); /* Example background color */
+  color: white; /* Example text color */
+  border-radius: 5px;
+  margin-top: 10px; /* Adds space between email input and submit button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: .3s;
+  margin-top: 20px;
+}
+form input[type="submit"]:hover{
+  margin-top: 25px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.137);
+  background-color:  hsl(4, 100%, 67%);
+}
+/*end form box */
+.successbox{
+  background-color: var(--white-color);
+  width: 360px;
+  height: 420px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  opacity: 0; /* Start with 0 opacity */
+    transition: opacity 0.2s ease-in; /* Smooth opacity transition */
+}
+.img img{
+max-width: 100%;
+width: 50px;
+margin-top: 20px;
+margin-left: 20px;
+}
+.stext h1{
+  font-family: "Roboto", sans-serif;
+font-size: 50px;
+margin-top: 22px;
+margin-bottom: 0;
+}
+.stext p{
+  font-family: "Roboto", sans-serif;
+font-weight: 400;
+}
+.stext span{
+  font-weight: bold;
+}
+.dismiss button{
+  margin-top: 0;
+  width: 350px; /* Adjust width as needed */
+  height: 45px; /* Adjust height as needed */
+  border: none;
+  background-color:hsl(235, 18%, 26%); /* Example background color */
+  color: white; /* Example text color */
+  border-radius: 5px;
+  margin-top: 10px; /* Adds space between email input and submit button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: .3s;
+  margin-top: 20px;
+}
+.dismiss button:hover{
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.137);
+  background-color:  hsl(4, 100%, 67%);
+}
